@@ -18,7 +18,9 @@ function reverseString(phrase) {
 	return reversedPhrase;
 }
 
-function calculator() {}
+let calculator = {
+
+}
 
 function caesarCipher() {}
 
