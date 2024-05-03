@@ -41,3 +41,25 @@ test("1.5 / 2 returns " + 1.5 / 2, () => {
 test("1.2 * 2.56 returns " + 1.2 * 2.56, () => {
 	expect(calculator.multiply(1.2, 2.56)).toBe(1.2 * 2.56);
 });
+
+// CaesarCipher
+
+// AnalyzeArray
+
+test("Analyzing [1, 8, 3, 4, 2, 6]", () => {
+	expect(analyzeArray([1, 8, 3, 4, 2, 6])).toBe({
+		average: 4,
+		min: 1,
+		max: 8,
+		length: 6,
+	});
+});
+
+test("Analyzing [1, 8, 3, 4, 2, 6, 0]", () => {
+	expect(analyzeArray([1, 8, 3, 4, 2, 6, 0])).not.toBe({
+		average: 4,
+		min: 1,
+		max: 8,
+		length: 6,
+	});
+});

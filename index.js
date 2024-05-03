@@ -35,6 +35,8 @@ let calculator = {
 
 function caesarCipher() {}
 
-function analyzeArray() {}
+function analyzeArray(array) {
+	
+}
 
 export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
