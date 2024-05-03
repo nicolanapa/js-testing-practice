@@ -1,9 +1,13 @@
 import { capitalize } from "./index";
 
-test("First capitalize() test", () => {
+test("capitalize(): europa", () => {
 	expect(capitalize("europa")).toBe("Europa");
 });
 
-test("Second capitalize() test", () => {
+test("capitalize(): Mangiare", () => {
 	expect(capitalize("Mangiare")).toBe("Mangiare");
+});
+
+test("capitalize(): 007", () => {
+	expect(capitalize("007")).toBe("007");
 });
