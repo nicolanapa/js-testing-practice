@@ -11,3 +11,7 @@ test("capitalize(): Mangiare", () => {
 test("capitalize(): 007", () => {
 	expect(capitalize("007")).toBe("007");
 });
+
+test("reverseString(): alfonso sa Mangiare", () => {
+	expect(reverseString("alfonso sa Mangiare")).toBe("eraignaM as osnofla");
+});

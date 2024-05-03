@@ -8,7 +8,15 @@ function capitalize(phrase) {
 	return phrase;
 }
 
-function reverseString(phrase) {}
+function reverseString(phrase) {
+    let reversedPhrase = "";
+
+    for (let i = phrase.length; i > 0; i--) {
+
+    }
+
+    return reversedPhrase;
+}
 
 function calculator() {}
 
