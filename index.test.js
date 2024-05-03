@@ -27,5 +27,17 @@ test("reverseString(): eraignaM as osnofla", () => {
 // Calculator
 
 test("1 add 2 returns 3", () => {
-	expect(calculator.add(1, 2)).toBe(3);
+	expect(calculator.add(1, 2)).toBe(1 + 2);
+});
+
+test("1 subtract 2 returns -1", () => {
+	expect(calculator.subtract(1, 2)).toBe(1 - 2);
+});
+
+test("1.5 / 2 returns " + 1.5 / 2, () => {
+	expect(calculator.divide(1.5, 2)).toBe(1.5 / 2);
+});
+
+test("1.2 * 2.56 returns " + 1.2 * 2.56, () => {
+	expect(calculator.multiply(1.2, 2.56)).toBe(1.2 * 2.56);
 });
