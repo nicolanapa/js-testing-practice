@@ -42,7 +42,12 @@ function analyzeArray(array) {
 	let length = array.length;
 
 	if (length === 0) {
-		return 0;
+		return {
+            average: 0,
+            min: 0,
+            max: 0,
+            length: 0,
+        };
 	}
 
 	min = array[0];
