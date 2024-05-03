@@ -1,3 +1,5 @@
+// Capitalize
+
 function capitalize(phrase) {
 	if (phrase[0].charCodeAt() >= 97 && phrase[0].charCodeAt() <= 122) {
 		let temp = phrase.slice(0, 1);
@@ -8,6 +10,8 @@ function capitalize(phrase) {
 	return phrase;
 }
 
+// ReverseString
+
 function reverseString(phrase) {
 	let reversedPhrase = "";
 
@@ -17,6 +21,8 @@ function reverseString(phrase) {
 
 	return reversedPhrase;
 }
+
+// Calculator
 
 let calculator = {
 	add: (num1, num2) => {
@@ -32,6 +38,24 @@ let calculator = {
 		return num1 * num2;
 	},
 };
+
+// CaesarCipher
+
+function encrypt(plainAlphabet, cipherAlphabet, plaintext) {
+	let ciphertext = "";
+
+	for (let i = 0; i < plaintext.length; i++) {
+		if (plaintext[i].charCodeAt() >= 97 && plaintext[i].charCodeAt() <= 122) {
+			if (plaintext[i].charCodeAt() >= 65 && plaintext[i].charCodeAt() <= 90) {
+			} else {
+				let temp = plainAlphabet.indexOf(plaintext[i]);
+				ciphertext += cipherAlphabet[temp].toLowerCase();
+			}
+		}
+	}
+
+	return ciphertext;
+}
 
 function caesarCipher(plaintext) {
 	let plainAlphabet = [
@@ -101,24 +125,11 @@ function caesarCipher(plaintext) {
 		",",
 	];
 
-	return translate(plainAlphabet, cipherAlphabet, plaintext);
+	return encrypt(plainAlphabet, cipherAlphabet, plaintext);
 }
 
-function translate(plainAlphabet, cipherAlphabet, plaintext) {
-	let ciphertext = "";
+// AnalyzeArray
 
-	for (let i = 0; i < plaintext.length; i++) {
-		if (plaintext[i].charCodeAt() >= 97 && plaintext[i].charCodeAt() <= 122) {
-			if (plaintext[i].charCodeAt() >= 65 && plaintext[i].charCodeAt() <= 90) {
-			} else {
-				let temp = plainAlphabet.indexOf(plaintext[i]);
-				ciphertext += cipherAlphabet[temp].toLowerCase();
-			}
-		}
-	}
-
-	return ciphertext;
-}
 function analyzeArray(array) {
 	let average = 0;
 	let min = null;
