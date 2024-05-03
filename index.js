@@ -33,7 +33,74 @@ let calculator = {
 	},
 };
 
-function caesarCipher() {}
+function caesarCipher(plaintext) {
+	let plainAlpha = [
+		" ",
+		".",
+		",",
+		"?",
+		"!",
+		"a",
+		"b",
+		"c",
+		"d",
+		"e",
+		"f",
+		"g",
+		"h",
+		"i",
+		"j",
+		"k",
+		"l",
+		"m",
+		"n",
+		"o",
+		"p",
+		"q",
+		"r",
+		"s",
+		"t",
+		"u",
+		"v",
+		"w",
+		"x",
+		"y",
+		"z",
+	];
+	let cipherAlphabet = [
+		"?",
+		"!",
+		"A",
+		"B",
+		"C",
+		"D",
+		"E",
+		"F",
+		"G",
+		"H",
+		"I",
+		"J",
+		"K",
+		"L",
+		"M",
+		"N",
+		"O",
+		"P",
+		"Q",
+		"R",
+		"S",
+		"T",
+		"U",
+		"V",
+		"W",
+		"X",
+		"Y",
+		"Z",
+		" ",
+		".",
+		",",
+	];
+}
 
 function analyzeArray(array) {
 	let average = 0;
@@ -43,11 +110,11 @@ function analyzeArray(array) {
 
 	if (length === 0) {
 		return {
-            average: 0,
-            min: 0,
-            max: 0,
-            length: 0,
-        };
+			average: 0,
+			min: 0,
+			max: 0,
+			length: 0,
+		};
 	}
 
 	min = array[0];
