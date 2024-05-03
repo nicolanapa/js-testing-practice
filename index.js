@@ -9,13 +9,13 @@ function capitalize(phrase) {
 }
 
 function reverseString(phrase) {
-    let reversedPhrase = "";
+	let reversedPhrase = "";
 
-    for (let i = phrase.length; i > 0; i--) {
+	for (let i = phrase.length - 1; i >= 0; i--) {
+		reversedPhrase += phrase[i];
+	}
 
-    }
-
-    return reversedPhrase;
+	return reversedPhrase;
 }
 
 function calculator() {}
