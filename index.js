@@ -40,6 +40,7 @@ let calculator = {
 };
 
 // CaesarCipher
+// keys: 3
 
 function encrypt(plainAlphabet, cipherAlphabet, plaintext) {
 	let ciphertext = "";
