@@ -1,4 +1,4 @@
-import { capitalize } from "./index";
+import { capitalize, reverseString, calculator, caesarCipher, analyzeArray } from "./index";
 
 test("capitalize(): europa", () => {
 	expect(capitalize("europa")).toBe("Europa");
