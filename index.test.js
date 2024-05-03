@@ -44,6 +44,10 @@ test("1.2 * 2.56 returns " + 1.2 * 2.56, () => {
 
 // CaesarCipher
 
+test("Shifting FRUTTIvendolo! apertO...", () => {
+	expect(caesarCipher("FRUTTIvendolo! apertO...")).toBe("IUXWWLyhqgrorc?dshuwR!!!");
+});
+
 // AnalyzeArray
 
 test("Analyzing [1, 8, 3, 4, 2, 6]", () => {
