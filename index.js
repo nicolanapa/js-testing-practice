@@ -45,12 +45,14 @@ function encrypt(plainAlphabet, cipherAlphabet, plaintext) {
 	let ciphertext = "";
 
 	for (let i = 0; i < plaintext.length; i++) {
+		let temp = plainAlphabet.indexOf(plaintext[i].toLowerCase());
+
 		if (plaintext[i].charCodeAt() >= 97 && plaintext[i].charCodeAt() <= 122) {
-			if (plaintext[i].charCodeAt() >= 65 && plaintext[i].charCodeAt() <= 90) {
-			} else {
-				let temp = plainAlphabet.indexOf(plaintext[i]);
-				ciphertext += cipherAlphabet[temp].toLowerCase();
-			}
+			ciphertext += cipherAlphabet[temp].toLowerCase();
+		} else if (plaintext[i].charCodeAt() >= 65 && plaintext[i].charCodeAt() <= 90) {
+			ciphertext += cipherAlphabet[temp];
+		} else {
+			ciphertext += cipherAlphabet[temp];
 		}
 	}
 
