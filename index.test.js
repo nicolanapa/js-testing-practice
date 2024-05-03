@@ -48,6 +48,14 @@ test("Shifting FRUTTIvendolo! apertO...", () => {
 	expect(caesarCipher("FRUTTIvendolo! apertO...")).toBe("IUXWWLyhqgrorC?dshuwR!!!");
 });
 
+test("Shifting  .,?!abcdefghijklmnopqrstuvwxyz", () => {
+	expect(caesarCipher(" .,?!abcdefghijklmnopqrstuvwxyz")).toBe("?!ABCdefghijklmnopqrstuvwxyz .,");
+});
+
+test("Shifting  .,?!ABCDEFGHIJKLMNOPQRSTUVWXYZ", () => {
+	expect(caesarCipher(" .,?!ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe("?!ABCDEFGHIJKLMNOPQRSTUVWXYZ .,");
+});
+
 // AnalyzeArray
 
 test("Analyzing [1, 8, 3, 4, 2, 6]", () => {
